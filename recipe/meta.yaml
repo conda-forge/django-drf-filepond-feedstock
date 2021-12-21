@@ -1,5 +1,5 @@
 {% set name = "django-drf-filepond" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-drf-filepond-{{ version }}.tar.gz
-  sha256: 17fddf0f3c85502e55b781a1b00150d42af378558861824f10c3950e1d49a3c8
+  sha256: a32c46fd54982d88aeb4f3825973a194eb9d5d01b031c53bfe2770fc98895873
 
 build:
   number: 0
