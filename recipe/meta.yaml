@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - django >=2.2.24
+    - django >=2.2.25
     - djangorestframework >=3.11.2
     - django-storages >=1.9.1
     - python >=3.6
