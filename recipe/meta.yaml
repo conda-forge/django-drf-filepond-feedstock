@@ -1,5 +1,5 @@
 {% set name = "django-drf-filepond" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.2" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django-drf-filepond-{{ version }}.tar.gz
-  sha256: 360abcbcfdc016398435679dcc768b0c2d6b29a92db46fe3430ad31176251a13
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 77ed4ddd79dd9d5f5037ee0f54ed6b15ab256db3fc83a4f553a62cd38e5bba11
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
   run:
     - django >=2.2.25
-    - djangorestframework >=3.11.2
+    - djangorestframework >=3.12.4
     - django-storages >=1.9.1
     - python >={{ python_min }}
     - requests >=2.20.1
